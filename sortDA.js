@@ -1,4 +1,5 @@
 // Write a JavaScript program to sort an array of objects in ascending and descending order.
+
 let arrayObject = [
     {
         id : 3,
