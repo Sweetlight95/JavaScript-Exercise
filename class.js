@@ -2,39 +2,27 @@
 // e.g let a = ["a", 1, true], b = ["b", 2, false]
 
 function twoArrays (a, b) {
+    let g = a.concat(b);
     let c = [];
     let d=[]
     let e = []
     let f=[]
-    for(let i in a) {
-        if(i === Number) {
-            c.push(i)
+    for(let i = 0; i < g.length; i++) {
+        if(typeof g[i] === "number") {
+            c.push(g[i]);
         }
-        if (i===String) {
-            d.push(i)
+        if (typeof g[i] === "string") {
+            d.push(g[i]);
         }
-        if (i===Boolean) {
-            e.push(i)
-        }
-    }
-   
-    for(let i in b) {
-        if(i === Number) {
-            c.push(i)
-        }
-        if (i===String) {
-            d.push(i)
-        }
-        if (i===Boolean){
-             e.push(i)
+        if (typeof g[i]=== "boolean") {
+            e.push(g[i]);
         }
     }
-    
-    f.push(c, d, e)
-    return f
-}
+    f.push(c, d, e);
+    return f;
+}   
+
 const a = ["a", 1, true];
 const b = ["b", 2, false];
-// console.log(Object.entries(twoArrays));
-// twoArrays()
-console.log(twoArrays(a, b))
+
+console.log(twoArrays(a, b));
