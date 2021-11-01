@@ -7,9 +7,6 @@ function getUniqueAfterMerging(a, b) {
     console.log(duplicate);
 }
 const a = [2, 3, 1];
-const b = [2, 3, 1, 5, 9];
+const b = [2, 3, 1, 3, 5, 9];
 
 getUniqueAfterMerging(a, b);
-
-
-https://github.com/Sweetlight95/JavaScript-Exercise.git
